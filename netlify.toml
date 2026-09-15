@@ -1,10 +1,22 @@
+# Netlify configuration for a pure static HTML/CSS/JS site
+
 [build]
   publish = "."
 
-[build.processing]
-  skip_processing = false
+# No build command is required.
+# Netlify serves index.html directly from the repository root.
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[build.processing]
+  skip_processing = true
+
+# Security + caching headers for static assets.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
