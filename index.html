@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07070a">
+  <meta name="description" content="Magnw27 — vanilla web portfolio. Pure HTML, CSS and JavaScript.">
+  <title>Magnw27 — Digital Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress"><span></span></div>
+  <div class="loader" aria-hidden="true"><div class="loader-mark">M<span>.</span></div><div class="loader-line"><i></i></div></div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Magnw27 home"><span class="brand-dot"></span>Magnw27</a>
+    <nav><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <button class="menu" aria-label="Toggle menu"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="orb orb-a" aria-hidden="true"></div><div class="orb orb-b" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status"></span> Independent developer · Indonesia</p>
+        <h1>Digital things,<br><em>made with intent.</em></h1>
+        <p class="hero-text">I build fast, expressive experiences with a sharp eye for motion, detail and the tiny interactions people remember.</p>
+        <div class="hero-actions"><a class="button magnetic" href="#work">Explore work <span>↘</span></a><a class="text-link" href="#contact">Let's talk <span>→</span></a></div>
+      </div>
+      <div class="hero-meta reveal"><span>Scroll to explore</span><span class="scroll-line"></span><span>01 / 05</span></div>
+    </section>
+
+    <section class="statement section reveal"><p class="eyebrow">01 — Philosophy</p><h2>Less noise.<br><span>More character.</span></h2><p class="statement-copy">No templates. No visual filler. Every layer has a reason — from the typography rhythm to the way a card follows your cursor.</p></section>
+
+    <section id="work" class="work section">
+      <div class="section-head reveal"><div><p class="eyebrow">02 — Selected work</p><h2>A few things<br><span>I’ve shipped.</span></h2></div><p class="section-note">Interfaces, experiments<br>& digital products.</p></div>
+      <div class="projects">
+        <a class="project project-large reveal magnetic-card" href="https://github.com/Magnw27/wickai" target="_blank" rel="noreferrer"><div class="project-art art-wick"><div class="art-ring"></div><div class="art-core">W</div><div class="art-label">AI / CHAT</div></div><div class="project-info"><div><span>01</span><h3>WickAI</h3></div><p>AI interface<br>experience</p><b>↗</b></div></a>
+        <a class="project reveal magnetic-card" href="https://github.com/Magnw27/rivo-downloader" target="_blank" rel="noreferrer"><div class="project-art art-rivo"><div class="rivo-window"><i></i><i></i><i></i><strong>RIVO</strong><small>DOWNLOAD / ANYTHING</small></div></div><div class="project-info"><div><span>02</span><h3>Rivo</h3></div><p>Utility<br>product</p><b>↗</b></div></a>
+        <a class="project reveal magnetic-card" href="https://github.com/Magnw27/dashboard" target="_blank" rel="noreferrer"><div class="project-art art-dash"><div class="dash-bars"><i></i><i></i><i></i><i></i><i></i></div><div class="dash-grid"></div></div><div class="project-info"><div><span>03</span><h3>Dashboard</h3></div><p>Portfolio<br>system</p><b>↗</b></div></a>
+      </div>
+    </section>
+
+    <section id="about" class="about section reveal"><div><p class="eyebrow">03 — About</p><h2>Vanilla by choice,<br><span>not limitation.</span></h2></div><div class="about-copy"><p>Pure HTML. Pure CSS. Pure JavaScript. No framework overhead, no component maze, no build step hiding what actually runs.</p><p>The goal is simple: make the browser do more with less — while keeping the source understandable and the experience unmistakably human.</p><div class="stack"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Web APIs</span></div></div></section>
+
+    <section class="marquee" aria-label="Capabilities"><div class="marquee-track"><span>Motion</span><i>✦</i><span>Interaction</span><i>✦</i><span>Performance</span><i>✦</i><span>Craft</span><i>✦</i><span>Motion</span><i>✦</i><span>Interaction</span><i>✦</i><span>Performance</span><i>✦</i><span>Craft</span><i>✦</i></div></section>
+
+    <section id="contact" class="contact section reveal"><p class="eyebrow">04 — Contact</p><div class="contact-wrap"><h2>Have an idea<br><em>worth building?</em></h2><a class="contact-link" href="https://github.com/Magnw27" target="_blank" rel="noreferrer">github.com/Magnw27 <span>↗</span></a></div></section>
+  </main>
+  <footer><span>© <span id="year"></span> Magnw27</span><span>Built without a framework.</span><a href="#top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
